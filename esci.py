@@ -30,6 +30,10 @@ def main(page: ft.Page):
             status_label.color = "red"
             mistakes += 1
 
+        current_index += 1
+        input_field.value = ""
+
+
     page.update()
 
 
