@@ -20,6 +20,8 @@ def main(page: ft.Page):
     input_field = ft.TextField(hint_text="Type here", autofocus=True, width=270)
 
     def submit_word(e):
+        nonlocal mistakes, current_index
+        user_input = input_field.value.strip()
 
     page.update()
 
