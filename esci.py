@@ -47,5 +47,6 @@ def main(page: ft.Page):
     page.update()
 
     input_field.on_submit = submit_word
+    page.add( word_label, input_field, status_label, progress_label, accuracy_label )
 
 ft.app(target=main)
