@@ -22,6 +22,13 @@ def main(page: ft.Page):
     def submit_word(e):
         nonlocal mistakes, current_index
         user_input = input_field.value.strip()
+        if user_input == game_words[current_index]:
+            status_label.value = "Correct!"
+            status_label.color = "green"
+        else:
+            status_label.value = "Incorrect!"
+            status_label.color = "red"
+            mistakes += 1
 
     page.update()
 
