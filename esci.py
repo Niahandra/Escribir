@@ -19,5 +19,10 @@ def main(page: ft.Page):
     accuracy_label = ft.Text(value="Accuracy: 0%", size=14)
     input_field = ft.TextField(hint_text="Type here", autofocus=True, width=270)
 
+    def submit_word(e):
+
+    page.update()
+
+
 
 ft.app(target=main)
