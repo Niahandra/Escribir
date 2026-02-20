@@ -46,6 +46,6 @@ def main(page: ft.Page):
 
     page.update()
 
-
+    input_field.on_submit = submit_word
 
 ft.app(target=main)
